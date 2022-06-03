@@ -10,3 +10,4 @@ gnuplot-lua-*
 *.toc
 *.bbl
 *.blg
+.DS_Store
