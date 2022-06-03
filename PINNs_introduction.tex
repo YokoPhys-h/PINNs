@@ -269,13 +269,14 @@
     (t: \text{時間}, x: \text{位置}, h: \text{複素数解})&
   \end{align*}
   \normalsize
-  最小にすべき平均2乗誤差: \alert{$\mathrm{MSE}=\mathrm{MSE}_0+\mathrm{MSE}_f$}
-  \scriptsize
+  最小にすべき平均2乗誤差: \alert{$\mathrm{MSE}=\mathrm{MSE}_u+\mathrm{MSE}_f$}
+  \footnotesize
   \begin{align*}
-    \hspace{-10pt}&\alert{\mathrm{MSE}_0=\dfrac{1}{N_0}\sum_{i=1}^{N_0}\left|\psi(0,x_0)-\psi_0^i\right|^2}\quad : \structure{\text{初期値のロスを評価}}\\
-    &\tiny\alert{\mathrm{MSE}_b=\dfrac{1}{N_b}\sum_{i=1}^{N_b}\left(\left|\psi^i(t_b^i,-5)-\psi^i(t^i_b,5)\right|^2+\left|\psi^i_x(t_b^i,-5)-\psi^i_x(t^i_b,5)\right|^2\right)}: \structure{\text{初期値のロスを評価}}\\
-    &\{x_0^i,\psi_0^i\}_{i=1}^{N_0}: \text{初期値訓練データ}, \{t_f^i, x_f^i\}_{i=1}^{N_f}: \text{$f$上の訓練データ}
+      &\alert{M S E_{u}=\frac{1}{N} \sum_{i=1}^{N}\left|u\left(t_{u}^{i}, x_{u}^{i}\right)-u^{i}\right|^{2}}\quad \structure{\text{: 予測値の平均2乗誤差}} \\
+      &\alert{M S E_{f}=\frac{1}{N} \sum_{i=1}^{N}\left|f\left(t_{u}^{i}, x_{u}^{i}\right)\right|^{2}}\quad \structure{\text{: 微分方程式の平均2乗誤差}}\\
+      &\alert{\mathrm{MSE}=|\hat{u}-u|^{2}+\left|\hat{u}_{t}+\lambda_{1} \hat{u} \hat{u}_{x}-\lambda_{2} \hat{u}_{x x}\right|^{2}}
   \end{align*}
+  \vspace{-15pt}
   \normalsize
   \footnotesize
   \structure{なお, $\psi$は複素数であるが, $\psi=u+iv$としてそれぞれにNeural Networksを構成すればよい.}
