@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{_HuaTinoNVIDIASimNetDemoShiwareteiruPhysicsInformed_}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{https://qiita.com/nnnnnnn/items/df62e9fb0ec999df96a2}
+    \field{title}{{話題のNVIDIA SimNet\texttrademark
+  でも使われているPhysics-Informed Neural
+  Networkについて調べてみたら、深過ぎたので「自由落下」問題をPhysics-Informedしてみた。}}
+    \field{langid}{japanese}
+    \field{journaltitle}{Qiita}
+  \endentry
+
+  \entry{RAISSI2019686}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RM}{%
+         family={Raissi},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Perdikaris},
+         familyi={P\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Karniadakis},
+         familyi={K\bibinitperiod},
+         given={G.E.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Data-driven scientific computing,Machine learning,Nonlinear
+  dynamics,Predictive modeling,Runge^^e2^^80^^93Kutta methods}
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMPPKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.jcp.2018.10.045
+    \endverb
+    \field{issn}{0021-9991}
+    \field{pages}{686\bibrangedash 707}
+    \field{title}{Physics-Informed Neural Networks: {{A}} Deep Learning
+  Framework for Solving Forward and Inverse Problems Involving Nonlinear
+  Partial Differential Equations}
+    \field{volume}{378}
+    \field{journaltitle}{Journal of Computational Physics}
+    \field{year}{2019}
+  \endentry
+
+  \entry{raissi_PhysicsinformedNeuralNetworks_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RM}{%
+         family={Raissi},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Perdikaris},
+         familyi={P\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KGE}{%
+         family={Karniadakis},
+         familyi={K\bibinitperiod},
+         given={G.\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{Data-driven scientific computing,Machine learning,Nonlinear
+  dynamics,Predictive modeling,Runge^^e2^^80^^93Kutta methods}
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMPPKGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.1016/j.jcp.2018.10.045
+    \endverb
+    \field{issn}{0021-9991}
+    \field{pages}{686\bibrangedash 707}
+    \field{shorttitle}{Physics-Informed Neural Networks}
+    \field{title}{Physics-Informed Neural Networks: {{A}} Deep Learning
+  Framework for Solving Forward and Inverse Problems Involving Nonlinear
+  Partial Differential Equations}
+    \field{volume}{378}
+    \field{langid}{english}
+    \field{journaltitle}{Journal of Computational Physics}
+    \field{month}{02}
+    \field{year}{2019}
+  \endentry
+\enddatalist
+\endinput

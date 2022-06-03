@@ -1,0 +1,10 @@
+gnuplot-lua-*
+*.aux
+*-blx.bib
+*.log
+*.nav
+*.out
+*.xml
+*.snm
+*.gz
+*.toc
