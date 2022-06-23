@@ -1,0 +1,120 @@
+\documentclass[xcolor=dvipsnames,hyperref={breaklinks=true},mathserif,professionalfont,dvipdfmx,12pt]{beamer}
+\usepackage[ipaex]{pxchfon}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{ascmac}
+
+\usepackage[utf8]{inputenc}
+\usepackage{bm}
+\usepackage{here}
+\usepackage{enumerate}
+\usepackage{bxdpx-beamer} %dvipdfmc対応
+\usepackage{pxjahyper} %しおりの和文対応
+\usepackage{minijs} %jsarticleのミニ版
+\usepackage{otf}
+\usepackage{helvet}
+\usepackage{breqn}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\usepackage[style=chem-angew,backend=bibtex]{biblatex}
+\AtEveryCitekey{\iffootnote{\tiny}{}}
+\usepackage{filecontents}
+\addbibresource{Reference.bib}
+
+
+%hyperlink等
+\usepackage{hyperref}
+\usepackage{pxjahyper}
+
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+%TikZ
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{bending}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary {shapes.misc}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{gnuplottex}
+
+\usepackage[absolute,overlay]{textpos}
+% \usepackage[colorgrid,gridunit=pt,texcoord]{eso-pic}%グリッド表示
+
+
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+
+
+\setbeamertemplate{caption}[numbered]
+
+\title{Physics Informed Neural Networks (PINNs)}
+\subtitle{物理法則に基づいた機械学習手法}
+\author{YokoPhys-h}
+\date{\today}
+\institute{hoge大学大学院}
+\titlegraphic{\includegraphics[scale=0.3]{icon_YokoPhys.png}}
+
+
+
+
+% \usetheme{Madrid}
+\usetheme{Montpellier}
+% \usetheme{AnnArbor}
+%\usetheme{Copenhagen}
+% \usecolortheme[RGB={0, 126, 15}]{structure}
+
+% \usetheme{Rochester}
+
+\usecolortheme[named=MidnightBlue]{structure} % 色指定
+\usefonttheme{professionalfonts}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+%itemizeの記号設定
+\setbeamertemplate{itemize item}[ball] 
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subsubitem}[circle]
+
+% \setbeamertemplate{navigation symbols}{}%ナビゲーションシンボル消去
+\setbeamertemplate{footline}[page number] %ページ番号
+%\setbeamertemplate{navigation symbols}[horizontal]
+
+\makeatletter
+\def\pgfutil@insertatbegincurrentpagefrombox#1{%
+  \edef\pgf@temp{\the\wd\pgfutil@abb}%
+  \global\setbox\pgfutil@abb\hbox{%
+    \unhbox\pgfutil@abb%
+    \hskip\dimexpr2in-2\hoffset-\pgf@temp\relax% changed
+    #1%
+    \hskip\dimexpr-2in-2\hoffset\relax% new
+  }%
+}
+\makeatother
+
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+\begin{frame}
+  \frametitle{Contents}
+  \tableofcontents
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{参考文献}
+  \printbibliography
+\end{frame}
+
+
+
+% \frame{\centering \Large Thank you for your attention !!}
+
+
+\end{document}
