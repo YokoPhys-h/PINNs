@@ -139,6 +139,15 @@
 \begin{frame}
   \structure{Physics Informed Neural Networks (PINNs)}\footfullcite{RAISSI2019686}\\
   \small Neural Networkの損失関数に物理的制約を取り込むことで, 学習データを必要とせず, 関数を出力する.\normalsize
+  \begin{figure}[H]
+    \centering
+      \includegraphics[width=0.5\linewidth]{figure/fig10.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \structure{Physics Informed Neural Networks (PINNs)}\footfullcite{RAISSI2019686}\\
+  \small Neural Networkの損失関数に物理的制約を取り込むことで, 学習データを必要とせず, 関数を出力する.\normalsize
   \footnotesize
   \begin{itemize}
     \item 実験観測データと理論(物理的制約)を組み合わせて流体の内部情報を拾えないか?
@@ -254,9 +263,9 @@
     \end{textblock*}
 \end{frame}
 
-\subsection{利点}
+\subsection{利点とまとめ}
 \begin{frame}
-  \frametitle{利点}
+  \frametitle{利点とまとめ}
   \setbeamertemplate{itemize item}[ball]
   \begin{itemize}
     \item 使用したのは実験観測データと基礎方程式のみ
@@ -276,6 +285,9 @@
   \structure{HFMを使うことで詳しく初期条件や境界条件を知らずとも物理的制約(保存即, 運動方程式)のみで現象の内部の情報を拾うことができるようになる.}\\
   \footnotesize$\rightarrow$ 生体内内部情報(血液流速, 応力, etc.), 連続体内部情報(浮力, 応力, etc.)への有用可能性.\normalsize
 \end{frame}
+
+
+
 % 参考文献
 \begin{frame}[allowframebreaks]{参考文献}
   \printbibliography
